@@ -30,7 +30,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'cocopon/lightline-hybrid.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', {'on' : 'NERDTreeToggle'}
 "Plug 'Valloric/YouCompleteMe', { 'for' : 'cpp'}
 "Plug 'SirVer/ultisnips', { 'for' : 'cpp'}
 "Plug 'honza/vim-snippets', { 'for' : 'cpp'}
@@ -38,7 +38,7 @@ Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
 "Plug 'Shougo/neoinclude.vim'
 "Plug 'tweekmonster/deoplete-clang2'
 Plug 'sheerun/vim-polyglot'
-Plug 'mattn/emmet-vim', { 'for': ['html', 'javascript ', 'php', 'css'] }
+Plug 'mattn/emmet-vim', {'for': ['html', 'javascript ', 'php', 'css']}
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'frankier/neovim-colors-solarized-truecolor-only'
 Plug 'chriskempson/base16-vim'
@@ -47,6 +47,7 @@ Plug 'w0ng/vim-hybrid'
 Plug 'joshdick/onedark.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
+Plug 'Yggdroot/indentLine', {'for' : ['html', 'blade']}
 call plug#end()
 
 
