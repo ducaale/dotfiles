@@ -31,12 +31,6 @@ Plug 'cocopon/lightline-hybrid.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree', {'on' : 'NERDTreeToggle'}
-"Plug 'Valloric/YouCompleteMe', { 'for' : 'cpp'}
-"Plug 'SirVer/ultisnips', { 'for' : 'cpp'}
-"Plug 'honza/vim-snippets', { 'for' : 'cpp'}
-"Plug 'Shougo/deoplete.nvim', { 'do': 'UpdateRemotePlugins', 'for': 'cpp' }
-"Plug 'Shougo/neoinclude.vim'
-"Plug 'tweekmonster/deoplete-clang2'
 Plug 'sheerun/vim-polyglot'
 Plug 'mattn/emmet-vim', {'for': ['html', 'javascript ', 'php', 'css']}
 Plug 'ctrlpvim/ctrlp.vim'
@@ -63,32 +57,6 @@ let g:WebDevIconsUnicodeDecorateFolderNodes = 1
 
 let g:NERDTreeDirArrowExpandable = ''
 let g:NERDTreeDirArrowCollapsible = ''
-
-" deoplete
-"let g:deoplete#enable_at_startup = 1
-"let g:deoplete#sources#clang#libclang_path = "/usr/lib/llvm-3.8/lib/libclang-3.8.so.1"
-"let g:deoplete#sources#clang#clang_header ="/usr/include/clang/3.8/include"
-
-" youCompleteMe
-" let g:ycm_add_preview_to_completeopt = 0
-" let g:ycm_error_symbol = '✗'
-" let g:ycm_warning_symbol = '⚠'
-" set completeopt-=preview
-
-" ultisnips
-" let g:UltiSnipsJumpForwardTrigger="<c-j>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-" let g:UltiSnipsExpandTrigger="<nop>"
-" let g:ulti_expand_or_jump_res = 0
-" function! <SID>ExpandSnippetOrReturn()
-"   let snippet = UltiSnips#ExpandSnippetOrJump()
-"   if g:ulti_expand_or_jump_res > 0
-"     return snippet
-"   else
-"     return "\<CR>"
-"   endif
-" endfunction
-" inoremap <expr> <CR> pumvisible() ? "<C-R>=<SID>ExpandSnippetOrReturn()<CR>" : "\<CR>"
 
 " ctrlp
 let g:ctrlp_open_new_file = 'r'       " open new files in current window
