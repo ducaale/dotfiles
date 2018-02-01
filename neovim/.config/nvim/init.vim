@@ -28,6 +28,7 @@ set inccommand=nosplit                " live substitute
 call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'cocopon/lightline-hybrid.vim'
+Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/nerdtree', {'on' : 'NERDTreeToggle'}
@@ -47,10 +48,7 @@ call plug#end()
 
 " colorscheme
 set termguicolors
-set background=dark
-
-let g:hybrid_reduced_contrast = 1
-colorscheme hybrid
+colorscheme nord
 
 " enable folder/directory glyph flag (disabled by default with 0)
 let g:WebDevIconsUnicodeDecorateFolderNodes = 1
@@ -67,7 +65,7 @@ let g:jsx_ext_required = 0            " Allow JSX in normal js files
 
 " lightline
 let g:lightline = {
-            \ 'colorscheme': 'hybrid',
+            \ 'colorscheme': 'nord',
             \ 'active': {
             \   'left': [ [ 'mode', 'paste' ],
             \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
