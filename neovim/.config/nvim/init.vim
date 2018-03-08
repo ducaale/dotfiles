@@ -31,6 +31,8 @@ Plug 'cocopon/lightline-hybrid.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
 Plug 'scrooloose/nerdtree', {'on' : 'NERDTreeToggle'}
 Plug 'sheerun/vim-polyglot'
 Plug 'mattn/emmet-vim', {'for': ['html', 'javascript ', 'php', 'css']}
