@@ -29,12 +29,16 @@ call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'cocopon/lightline-hybrid.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
+Plug 'suy/vim-context-commentstring'
 Plug 'scrooloose/nerdtree', {'on' : 'NERDTreeToggle'}
 Plug 'sheerun/vim-polyglot'
+Plug 'styled-components/vim-styled-components', {'branch' : 'main'}
+Plug 'jparise/vim-graphql'
 Plug 'mattn/emmet-vim', {'for': ['html', 'javascript ', 'php', 'css']}
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'frankier/neovim-colors-solarized-truecolor-only'
@@ -42,21 +46,16 @@ Plug 'chriskempson/base16-vim'
 Plug 'morhetz/gruvbox'
 Plug 'w0ng/vim-hybrid'
 Plug 'joshdick/onedark.vim'
-Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
-Plug 'Yggdroot/indentLine', {'for' : ['html', 'blade']}
+Plug 'Yggdroot/indentLine', {'for': ['blade', 'html', 'js', 'javascript.jsx']}
+Plug 'ervandew/supertab'
+Plug 'fatih/vim-go'
 call plug#end()
 
 
 " colorscheme
 set termguicolors
 colorscheme nord
-
-" enable folder/directory glyph flag (disabled by default with 0)
-let g:WebDevIconsUnicodeDecorateFolderNodes = 1
-
-let g:NERDTreeDirArrowExpandable = ''
-let g:NERDTreeDirArrowCollapsible = ''
 
 " ctrlp
 let g:ctrlp_open_new_file = 'r'       " open new files in current window
@@ -132,8 +131,6 @@ endfunction
 
 " emmet
 let g:user_emmet_settings={'javascript.jsx': {'extends':'jsx'}}
-let g:user_emmet_expandabbr_key='<Tab>'
-
 
 " key mappings
 let mapleader=","
