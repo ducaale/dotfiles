@@ -45,6 +45,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/indentLine', {'for' : ['html', 'blade']}
+Plug 'AndrewRadev/splitjoin.vim'
 call plug#end()
 
 
