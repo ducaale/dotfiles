@@ -49,7 +49,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/indentLine', {'for': ['blade', 'html', 'js', 'javascript.jsx']}
 Plug 'ervandew/supertab'
-Plug 'fatih/vim-go'
+Plug 'AndrewRadev/splitjoin.vim'
 call plug#end()
 
 
