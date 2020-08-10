@@ -55,7 +55,7 @@ call plug#end()
 
 " colorscheme
 set termguicolors
-colorscheme nord
+colorscheme hybrid
 
 " ctrlp
 let g:ctrlp_open_new_file = 'r'       " open new files in current window
@@ -66,7 +66,7 @@ let g:jsx_ext_required = 0            " Allow JSX in normal js files
 
 " lightline
 let g:lightline = {
-            \ 'colorscheme': 'nord',
+            \ 'colorscheme': 'hybrid',
             \ 'active': {
             \   'left': [ [ 'mode', 'paste' ],
             \             [ 'gitbranch', 'readonly', 'filename', 'modified' ],
