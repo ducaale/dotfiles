@@ -28,7 +28,6 @@ set inccommand=nosplit                " live substitute
 call plug#begin()
 Plug 'itchyny/lightline.vim'
 Plug 'cocopon/lightline-hybrid.vim'
-Plug 'arcticicestudio/nord-vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
@@ -37,15 +36,9 @@ Plug 'tpope/vim-commentary'
 Plug 'suy/vim-context-commentstring'
 Plug 'scrooloose/nerdtree', {'on' : 'NERDTreeToggle'}
 Plug 'sheerun/vim-polyglot'
-Plug 'styled-components/vim-styled-components', {'branch' : 'main'}
-Plug 'jparise/vim-graphql'
 Plug 'mattn/emmet-vim', {'for': ['html', 'javascript ', 'php', 'css']}
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'frankier/neovim-colors-solarized-truecolor-only'
-Plug 'chriskempson/base16-vim'
-Plug 'morhetz/gruvbox'
 Plug 'w0ng/vim-hybrid'
-Plug 'joshdick/onedark.vim'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/indentLine', {'for': ['blade', 'html', 'js', 'javascript.jsx']}
 Plug 'ajh17/VimCompletesMe'
