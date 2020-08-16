@@ -166,6 +166,10 @@ augroup configgroup
     autocmd filetype css setlocal tabstop=2
     autocmd filetype css setlocal softtabstop=2
     autocmd filetype css setlocal shiftwidth=2
+    autocmd filetype ocaml setlocal tabstop=2
+    autocmd filetype ocaml setlocal softtabstop=2
+    autocmd filetype ocaml setlocal shiftwidth=2
+    autocmd fileType ocaml setlocal commentstring=(*\ %s\ *)
 augroup end
 
 "hide gvim toolbar
