@@ -135,11 +135,16 @@ let g:user_emmet_settings={'javascript.jsx': {'extends':'jsx'}}
 " key mappings
 let mapleader=","
 
+" merlin
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
+
 autocmd FileType html,css,php,javascript imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 :imap jj <Esc>
 
 map <leader>k :NERDTreeToggle<CR>
+map <leader>t :MerlinTypeOf<CR>
 map <leader><space> :nohlsearch<CR>
 map <leader>ev :tabedit $MYVIMRC<CR>
 map <F9> :make<CR>
