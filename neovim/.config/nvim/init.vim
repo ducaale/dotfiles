@@ -145,6 +145,7 @@ autocmd FileType html,css,php,javascript imap <expr> <tab> emmet#expandAbbrIntel
 
 map <leader>k :NERDTreeToggle<CR>
 map <leader>t :MerlinTypeOf<CR>
+vnoremap <leader>t :MerlinTypeOfSel<CR>
 map <leader><space> :nohlsearch<CR>
 map <leader>ev :tabedit $MYVIMRC<CR>
 map <F9> :make<CR>
