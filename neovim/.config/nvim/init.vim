@@ -172,11 +172,3 @@ augroup configgroup
     autocmd fileType ocaml setlocal commentstring=(*\ %s\ *)
 augroup end
 
-"hide gvim toolbar
-set guioptions-=T
-set guioptions-=m
-
-"------------font-----------------"
-if has('gui_running')
-    set guifont=Inconsolata-dz\ for\ Powerline\ Medium\ 13
-endif
