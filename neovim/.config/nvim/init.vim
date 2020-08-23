@@ -43,6 +43,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/indentLine', {'for': ['blade', 'html', 'js', 'javascript.jsx']}
 Plug 'ajh17/VimCompletesMe'
 Plug 'AndrewRadev/splitjoin.vim'
+Plug 'jpalardy/vim-slime'
 call plug#end()
 
 
@@ -131,6 +132,9 @@ let mapleader=","
 " merlin
 autocmd fileType ocaml let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 autocmd fileType ocaml execute "set rtp+=" . g:opamshare . "/merlin/vim"
+
+" vim-slime
+let g:slime_target = "tmux"
 
 autocmd FileType html,css,php,javascript imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
