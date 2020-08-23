@@ -129,8 +129,8 @@ let g:user_emmet_settings={'javascript.jsx': {'extends':'jsx'}}
 let mapleader=","
 
 " merlin
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
+autocmd fileType ocaml let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+autocmd fileType ocaml execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 autocmd FileType html,css,php,javascript imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
