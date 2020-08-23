@@ -130,8 +130,8 @@ let g:user_emmet_settings={'javascript.jsx': {'extends':'jsx'}}
 let mapleader=","
 
 " merlin
-autocmd fileType ocaml let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-autocmd fileType ocaml execute "set rtp+=" . g:opamshare . "/merlin/vim"
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 " vim-slime
 let g:slime_target = "tmux"
