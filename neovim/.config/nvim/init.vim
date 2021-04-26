@@ -44,6 +44,7 @@ Plug 'Yggdroot/indentLine', {'for': ['blade', 'html', 'js', 'javascript.jsx']}
 Plug 'ajh17/VimCompletesMe'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'jpalardy/vim-slime'
+Plug 'mechatroner/rainbow_csv'
 call plug#end()
 
 
@@ -130,8 +131,8 @@ let g:user_emmet_settings={'javascript.jsx': {'extends':'jsx'}}
 let mapleader=","
 
 " merlin
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
-execute "set rtp+=" . g:opamshare . "/merlin/vim"
+" let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
+" execute "set rtp+=" . g:opamshare . "/merlin/vim"
 
 " vim-slime
 let g:slime_target = "tmux"
@@ -174,5 +175,8 @@ augroup configgroup
     autocmd filetype ocaml setlocal softtabstop=2
     autocmd filetype ocaml setlocal shiftwidth=2
     autocmd fileType ocaml setlocal commentstring=(*\ %s\ *)
+    autocmd filetype haskell setlocal tabstop=2
+    autocmd filetype haskell setlocal softtabstop=2
+    autocmd filetype haskell setlocal shiftwidth=2
 augroup end
 
